@@ -18,10 +18,12 @@ This document provides a comprehensive comparison between the two face detection
 
 #### face-detection-service (Current Repo)
 - **Structure**: Simple 2-layer architecture
-  - API layer (`app/api/`)
-  - Service layer (`app/services/`)
+  - API layer (`app/api/routes.py`)
+  - Service layer (`app/services/detector.py`)
+  - Schemas (`app/schemas.py`)
+  - Main application (`app/main.py`)
 - **Pattern**: Singleton pattern for detector
-- **Complexity**: Low - ~150 lines of core code
+- **Complexity**: Low - approximately 173 total lines
 - **Score**: ⭐⭐⭐ (3/5)
 
 **Pros:**
@@ -127,7 +129,7 @@ This document provides a comprehensive comparison between the two face detection
 
 #### face-detection-service (Current Repo)
 - **Test Files**: 2 (test_api.py, test_detector.py)
-- **Test Count**: ~5 tests
+- **Test Count**: 5 test functions
 - **Coverage**: Unknown (no coverage configuration)
 - **Test Types**: Basic unit and integration tests
 - **Configuration**: None
@@ -207,7 +209,7 @@ This document provides a comprehensive comparison between the two face detection
 
 #### face-detection-service (Current Repo)
 - **Dependencies**: 8 packages
-  - No version pinning on some packages
+  - No version pinning (unspecified versions for all packages)
   - Basic essentials only
 - **Dev Dependencies**: Included in main requirements
 - **Extras**: None
