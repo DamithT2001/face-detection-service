@@ -23,7 +23,7 @@ This document provides a comprehensive comparison between the two face detection
   - Schemas (`app/schemas.py`)
   - Main application (`app/main.py`)
 - **Pattern**: Singleton pattern for detector
-- **Complexity**: Low - approximately 173 total lines
+- **Complexity**: Low - 170 lines of code (main.py: 34, schemas.py: 9, routes.py: 35, detector.py: 92)
 - **Score**: ⭐⭐⭐ (3/5)
 
 **Pros:**
